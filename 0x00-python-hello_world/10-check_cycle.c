@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
  * check_cycle - check if linked list is cyclic
  * @list: the linked list
