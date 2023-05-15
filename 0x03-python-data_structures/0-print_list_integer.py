@@ -1,5 +1,15 @@
-#!/usr/bin/python3
+def print_list_integer(my_list=None):
+    """Prints all the integers of a list.
 
-def print_list_integer(my_list=[]):
+    Args:
+        my_list (list, optional): The list of integers. Defaults to None.
+
+    """
+    if my_list is None:
+        my_list = []
+
     for i in my_list:
-        print('{:d}'.format(i))
+        if isinstance(i, int):
+            print("{:d}".format(i))
+        else:
+            print("Error: List contains non-integer values.")
