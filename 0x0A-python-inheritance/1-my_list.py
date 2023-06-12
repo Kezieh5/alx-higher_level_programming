@@ -1,8 +1,14 @@
 #!/usr/bin/python3
-"""Define an inherited list class MyList"""
+"""print sorted list"""
+
 
 class MyList(list):
-    """Type class MyList with print_sorted function"""
+    """created a sorted list"""
+
+    def __init__(self):
+        """constructor method"""
+        super().__init__()
 
     def print_sorted(self):
+        """print a sorted list"""
         print(sorted(self))
